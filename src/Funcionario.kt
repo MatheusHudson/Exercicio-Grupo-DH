@@ -20,7 +20,9 @@ fun main() {
 
     val lista = mutableListOf(func1, func2, func3, func4)
 
-    val novoFunc = Funcionario("rodrigo", 2)
+    val funcionarioExistente = Funcionario("rodrigo", 2)
+    println(lista.contains(funcionarioExistente))
 
+    val novoFunc = Funcionario("rodrigo", 5)
     println(lista.contains(novoFunc))
 }
